@@ -23,6 +23,8 @@
 		914B83582AA45C560035D2AF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914B83572AA45C560035D2AF /* FeedCell.swift */; };
 		914B835A2AA46D8A0035D2AF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914B83592AA46D8A0035D2AF /* SearchBar.swift */; };
 		914B835C2AA542180035D2AF /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914B835B2AA542180035D2AF /* PostGridView.swift */; };
+		91B0BC382AA5445D008C18DD /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC372AA5445D008C18DD /* UserListView.swift */; };
+		91B0BC3A2AA54467008C18DD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC392AA54467008C18DD /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		914B83572AA45C560035D2AF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		914B83592AA46D8A0035D2AF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		914B835B2AA542180035D2AF /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		91B0BC372AA5445D008C18DD /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		91B0BC392AA54467008C18DD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				914B835B2AA542180035D2AF /* PostGridView.swift */,
+				91B0BC372AA5445D008C18DD /* UserListView.swift */,
+				91B0BC392AA54467008C18DD /* UserCell.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -440,12 +446,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				914B83502AA4591C0035D2AF /* SearchView.swift in Sources */,
+				91B0BC3A2AA54467008C18DD /* UserCell.swift in Sources */,
 				914B834D2AA458EA0035D2AF /* FeedView.swift in Sources */,
 				914B835C2AA542180035D2AF /* PostGridView.swift in Sources */,
 				914B83492AA458770035D2AF /* ContentView.swift in Sources */,
 				914B830A2AA44FA60035D2AF /* InstagramFireStoreApp.swift in Sources */,
 				914B834B2AA458C20035D2AF /* MainTabView.swift in Sources */,
 				914B83562AA4595C0035D2AF /* UploadPostView.swift in Sources */,
+				91B0BC382AA5445D008C18DD /* UserListView.swift in Sources */,
 				914B83542AA4593E0035D2AF /* ProfileView.swift in Sources */,
 				914B835A2AA46D8A0035D2AF /* SearchBar.swift in Sources */,
 				914B83522AA459300035D2AF /* NotificationView.swift in Sources */,
