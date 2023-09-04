@@ -31,6 +31,9 @@
 		91B0BC462AA56A9A008C18DD /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC452AA56A9A008C18DD /* ProfileActionButtonView.swift */; };
 		91B0BC482AA57777008C18DD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC472AA57777008C18DD /* ImagePicker.swift */; };
 		91B0BC4A2AA59341008C18DD /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC492AA59341008C18DD /* UploadPostView.swift */; };
+		91B0BC4E2AA59F5D008C18DD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC4D2AA59F5D008C18DD /* RegistrationView.swift */; };
+		91B0BC502AA59F73008C18DD /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC4F2AA59F73008C18DD /* ResetPasswordView.swift */; };
+		91B0BC522AA5A076008C18DD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC512AA5A076008C18DD /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		91B0BC452AA56A9A008C18DD /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
 		91B0BC472AA57777008C18DD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		91B0BC492AA59341008C18DD /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		91B0BC4D2AA59F5D008C18DD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		91B0BC4F2AA59F73008C18DD /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		91B0BC512AA5A076008C18DD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +288,9 @@
 		914B83422AA456EC0035D2AF /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				91B0BC4D2AA59F5D008C18DD /* RegistrationView.swift */,
+				91B0BC4F2AA59F73008C18DD /* ResetPasswordView.swift */,
+				91B0BC512AA5A076008C18DD /* LoginView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -466,9 +475,12 @@
 				914B83502AA4591C0035D2AF /* SearchView.swift in Sources */,
 				91B0BC3A2AA54467008C18DD /* UserCell.swift in Sources */,
 				914B834D2AA458EA0035D2AF /* FeedView.swift in Sources */,
+				91B0BC4E2AA59F5D008C18DD /* RegistrationView.swift in Sources */,
 				914B835C2AA542180035D2AF /* PostGridView.swift in Sources */,
 				914B83492AA458770035D2AF /* ContentView.swift in Sources */,
 				914B830A2AA44FA60035D2AF /* InstagramFireStoreApp.swift in Sources */,
+				91B0BC502AA59F73008C18DD /* ResetPasswordView.swift in Sources */,
+				91B0BC522AA5A076008C18DD /* LoginView.swift in Sources */,
 				914B834B2AA458C20035D2AF /* MainTabView.swift in Sources */,
 				91B0BC482AA57777008C18DD /* ImagePicker.swift in Sources */,
 				91B0BC402AA5598F008C18DD /* ProfileHeaderView.swift in Sources */,
