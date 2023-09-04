@@ -34,6 +34,8 @@
 		91B0BC4E2AA59F5D008C18DD /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC4D2AA59F5D008C18DD /* RegistrationView.swift */; };
 		91B0BC502AA59F73008C18DD /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC4F2AA59F73008C18DD /* ResetPasswordView.swift */; };
 		91B0BC522AA5A076008C18DD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC512AA5A076008C18DD /* LoginView.swift */; };
+		91B0BC542AA5A225008C18DD /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC532AA5A225008C18DD /* CustomSecureField.swift */; };
+		91B0BC562AA5A8E3008C18DD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC552AA5A8E3008C18DD /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		91B0BC4D2AA59F5D008C18DD /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		91B0BC4F2AA59F73008C18DD /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		91B0BC512AA5A076008C18DD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		91B0BC532AA5A225008C18DD /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		91B0BC552AA5A8E3008C18DD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 			children = (
 				91B0BC3B2AA54B6B008C18DD /* Extensions.swift */,
 				91B0BC472AA57777008C18DD /* ImagePicker.swift */,
+				91B0BC532AA5A225008C18DD /* CustomSecureField.swift */,
+				91B0BC552AA5A8E3008C18DD /* CustomTextField.swift */,
 			);
 			path = UTils;
 			sourceTree = "<group>";
@@ -491,6 +497,8 @@
 				914B835A2AA46D8A0035D2AF /* SearchBar.swift in Sources */,
 				914B83522AA459300035D2AF /* NotificationView.swift in Sources */,
 				91B0BC462AA56A9A008C18DD /* ProfileActionButtonView.swift in Sources */,
+				91B0BC542AA5A225008C18DD /* CustomSecureField.swift in Sources */,
+				91B0BC562AA5A8E3008C18DD /* CustomTextField.swift in Sources */,
 				914B83582AA45C560035D2AF /* FeedCell.swift in Sources */,
 				91B0BC3E2AA55505008C18DD /* NotificationCell.swift in Sources */,
 				91B0BC3C2AA54B6B008C18DD /* Extensions.swift in Sources */,
