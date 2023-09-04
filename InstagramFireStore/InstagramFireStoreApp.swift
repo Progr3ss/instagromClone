@@ -11,7 +11,7 @@ import SwiftUI
 struct InstagramFireStoreApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

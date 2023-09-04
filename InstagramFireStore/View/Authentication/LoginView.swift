@@ -19,7 +19,7 @@ struct LoginView: View {
             Image("Instagram_logo_white")
               .resizable()
               .scaledToFill()
-              .frame(width: 2e0, height: 100)
+              .frame(width: 200, height: 100)
           
             VStack(spacing: 20) {
               CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
@@ -55,18 +55,19 @@ struct LoginView: View {
                 .padding()
             })
             Spacer()
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+           
+            NavigationLink(destination: RegistrationView().navigationBarBackButtonHidden(true)) {
               HStack {
                 Text("Don't have an account?")
                   .font(.system(size: 14))
                 Text("Sign Up")
                   .font(.system(size: 15, weight: .semibold))
               }.foregroundColor(.white)
-            }).padding(.bottom,32)
-            
-            
+            }.padding()
+
           }
         }
+        .padding(.top, -10)
 
       }
     }
