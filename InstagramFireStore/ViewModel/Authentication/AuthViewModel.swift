@@ -12,7 +12,7 @@ import FirebaseAuth
 
 class AuthViewModel: ObservableObject {
   @Published var userSession: FirebaseAuth.User?
-  
+  static let shared = AuthViewModel()
   init() {
     userSession = Auth.auth().currentUser
   }
@@ -22,8 +22,6 @@ class AuthViewModel: ObservableObject {
   
   func register(withEmail email: String, password: String) {
     print("Register")
-    print("Register Email \(email)")
-    print("Register password \(password)")
     Auth.auth().createUser(withEmail: email, password: password){ result , error in
       if let error = error {
         print(error.localizedDescription)
@@ -37,6 +35,8 @@ class AuthViewModel: ObservableObject {
   
   func signout() {
     print("Signout")
+    self.userSession = nil
+    try? Auth.auth().signOut()
   }
   
   func fetchUser() {
