@@ -27,6 +27,7 @@
 		91B0BC3A2AA54467008C18DD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC392AA54467008C18DD /* UserCell.swift */; };
 		91B0BC3C2AA54B6B008C18DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC3B2AA54B6B008C18DD /* Extensions.swift */; };
 		91B0BC3E2AA55505008C18DD /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC3D2AA55505008C18DD /* NotificationCell.swift */; };
+		91B0BC402AA5598F008C18DD /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC3F2AA5598F008C18DD /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		91B0BC392AA54467008C18DD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		91B0BC3B2AA54B6B008C18DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		91B0BC3D2AA55505008C18DD /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		91B0BC3F2AA5598F008C18DD /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				914B83532AA4593E0035D2AF /* ProfileView.swift */,
+				91B0BC3F2AA5598F008C18DD /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				914B83492AA458770035D2AF /* ContentView.swift in Sources */,
 				914B830A2AA44FA60035D2AF /* InstagramFireStoreApp.swift in Sources */,
 				914B834B2AA458C20035D2AF /* MainTabView.swift in Sources */,
+				91B0BC402AA5598F008C18DD /* ProfileHeaderView.swift in Sources */,
 				914B83562AA4595C0035D2AF /* UploadPostView.swift in Sources */,
 				91B0BC382AA5445D008C18DD /* UserListView.swift in Sources */,
 				914B83542AA4593E0035D2AF /* ProfileView.swift in Sources */,
