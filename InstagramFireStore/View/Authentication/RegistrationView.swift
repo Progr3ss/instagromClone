@@ -48,7 +48,7 @@ struct RegistrationView: View {
             .background(Color(.init(white: 1, alpha: 0.15)))
             .cornerRadius(10)
             .foregroundColor(.white)
-          CustomSecureField(text: $userName, placeholder: Text("UserName"), imageName: "lock")
+          CustomTextField(text: $userName, placeholder: Text("UserName"), imageName: "lock")
             .padding()
             .background(Color(.init(white: 1, alpha: 0.15)))
             .cornerRadius(10)
@@ -67,7 +67,7 @@ struct RegistrationView: View {
         
         
         Button(action: {
-          viewModel.register(withEmail: email, password: password)
+          viewModel.register(withEmail: email, password: password, image: selectedImage, fullName: fullName, userName: userName)
         }, label: {
           Text("Sign Up")
             .font(.headline)
