@@ -11,11 +11,14 @@ import Firebase
 import FirebaseAuth
 
 class AuthViewModel: ObservableObject {
+  
   @Published var userSession: FirebaseAuth.User?
   static let shared = AuthViewModel()
   init() {
     userSession = Auth.auth().currentUser
+    fetchUser()
   }
+  
   func login(withEmail email: String, password: String) {
     Auth.auth().signIn(withEmail:email, password: password) { result, error in
       if let error = error {
@@ -82,7 +85,20 @@ class AuthViewModel: ObservableObject {
   func fetchUser() {
     guard let uid  = userSession?.uid else { return }
     COLLECTION_USERS.document(uid).getDocument{ snapshot, _ in
-      print("Firebase fetched User: \(snapshot?.data())")
+      guard let dictionary = snapshot?.data() else {return}
+      guard let username = dictionary["username"] as? String else {return}
+      guard let email = dictionary["email"] as? String else {return}
+      guard let profileImageUrl = dictionary["profileImageUrl"] as? String else {return}
+      guard let fullName = dictionary["fullName"] as? String else {return}
+      guard let uid = dictionary["uid"] as? String else {return}
+      
+      guard let user = try? snapshot?.data(as: User.self) else { return }
+      
+//      let user = User(username: username, fullName: fullName, email:email, profileImageUrl: profileImageUrl, id: uid)
+      print("Firebase fetched User: \(String(describing: snapshot?.data()))")
+      print("DEBUG: Username is \(user.username)")
+      print("DEBUG: email is \(user.email)")
+      print("DEBUG: fullName is \(user.fullName)")
     }
    
   }
