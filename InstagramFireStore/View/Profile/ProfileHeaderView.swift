@@ -24,7 +24,7 @@ struct ProfileHeaderView: View {
             UserStatView(value: 3, title: "Following")
           }.padding(.trailing,32)
         }
-        Text("Princianaa Dur")
+        Text("Mavis K")
           .font(.system(size: 15, weight: .semibold))
           .padding([.leading, .top])
         Text("Gotham's Dark Knight | Bililionaire")

@@ -44,6 +44,7 @@
 		91B0BC732AA69E80008C18DD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 91B0BC722AA69E80008C18DD /* FirebaseDatabase */; };
 		91B0BC752AA69E80008C18DD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 91B0BC742AA69E80008C18DD /* FirebaseFirestore */; };
 		91B0BC772AA69E80008C18DD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 91B0BC762AA69E80008C18DD /* FirebaseStorage */; };
+		91B0BC792AA6B6B8008C18DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B0BC782AA6B6B8008C18DD /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		91B0BC5B2AA5C191008C18DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91B0BC632AA5CAD9008C18DD /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		91B0BC6D2AA67EF7008C18DD /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		91B0BC782AA6B6B8008C18DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				91B0BC472AA57777008C18DD /* ImagePicker.swift */,
 				91B0BC532AA5A225008C18DD /* CustomSecureField.swift */,
 				91B0BC552AA5A8E3008C18DD /* CustomTextField.swift */,
+				91B0BC782AA6B6B8008C18DD /* Constants.swift */,
 			);
 			path = UTils;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				914B83582AA45C560035D2AF /* FeedCell.swift in Sources */,
 				91B0BC3E2AA55505008C18DD /* NotificationCell.swift in Sources */,
 				91B0BC3C2AA54B6B008C18DD /* Extensions.swift in Sources */,
+				91B0BC792AA6B6B8008C18DD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,6 @@ struct ProfileActionButtonView: View {
   var isFollowed = false
     var body: some View {
       if isCurrentUser {
-        //eidt profile button
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
           Text("Edit Profile")
             .font(.system(size: 14, weight: .semibold))

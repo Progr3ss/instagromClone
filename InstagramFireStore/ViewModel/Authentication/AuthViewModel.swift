@@ -58,7 +58,7 @@ class AuthViewModel: ObservableObject {
                       "uid": user.uid
                   ]
         
-        Firestore.firestore().collection("users").document(user.uid).setData(data) { error in
+          COLLECTION_USERS.document(user.uid).setData(data) { error in
             if let error = error {
                 print("DEBUG: failed to upload user data \(error.localizedDescription)")
                 return
@@ -80,7 +80,11 @@ class AuthViewModel: ObservableObject {
   }
   
   func fetchUser() {
-    print("fetchUser")
+    guard let uid  = userSession?.uid else { return }
+    COLLECTION_USERS.document(uid).getDocument{ snapshot, _ in
+      print("Firebase fetched User: \(snapshot?.data())")
+    }
+   
   }
   
   func restPassword() {
