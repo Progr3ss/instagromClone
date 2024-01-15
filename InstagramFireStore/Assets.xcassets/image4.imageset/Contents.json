@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "prog3ss_jessica_rabbit_as_a_black_women_at_a_bar_night_club_e305148a-612c-45a9-be6b-244088ef4d59.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
