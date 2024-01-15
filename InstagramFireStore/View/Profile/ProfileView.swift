@@ -12,7 +12,7 @@ struct ProfileView: View {
   
     var body: some View {
       VStack(spacing: 32) {
-        ProfileHeaderView()
+        ProfileHeaderView(user: user)
         PostGridView()
       }.padding(.top)
     }

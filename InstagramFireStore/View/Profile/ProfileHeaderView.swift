@@ -8,15 +8,29 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
+  let user: User
     var body: some View {
       VStack(alignment: .leading) {
         HStack {
-          Image("image4")
-            .resizable()
-            .scaledToFill()
-            .frame(width: 80, height: 80)
-            .clipShape(Circle())
-            .padding(.leading)
+          AsyncImage(url: URL(string: user.profileImageUrl)) { phase in
+              switch phase {
+              case .empty:
+                  ProgressView()
+              case .success(let image):
+                  image
+                      .resizable()
+                      .scaledToFill()
+                      .frame(width: 80, height: 80)
+                      .clipShape(Circle())
+                      .padding(.leading)
+              case .failure:
+                  Image(systemName: "exclamationmark.triangle")
+                      .frame(width: 48, height: 48)
+                      .foregroundColor(.red) // Adjust color as needed
+              @unknown default:
+                  EmptyView()
+              }
+          }
           Spacer()
           HStack(alignment: .center, spacing:  16) {
             UserStatView(value: 1, title: "Post")
@@ -24,7 +38,7 @@ struct ProfileHeaderView: View {
             UserStatView(value: 3, title: "Following")
           }.padding(.trailing,32)
         }
-        Text("Mavis K")
+      Text(user.fullName)
           .font(.system(size: 15, weight: .semibold))
           .padding([.leading, .top])
         Text("Gotham's Dark Knight | Bililionaire")
@@ -34,13 +48,13 @@ struct ProfileHeaderView: View {
         
         HStack {
           Spacer()
-          ProfileActionButtonView()
+          ProfileActionButtonView(isCurrentUser: user.isCurrentUser)
           Spacer()
         }
         .padding(.top)
       }
     }
 }
-#Preview {
-    ProfileHeaderView()
-}
+//#Preview {
+//    ProfileHeaderView()
+//}

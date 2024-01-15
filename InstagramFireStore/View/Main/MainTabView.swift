@@ -27,10 +27,10 @@ struct MainTabView: View {
             .tabItem {
               Image(systemName: "heart")
             }
-          ProfileView()
-            .tabItem {
-              Image(systemName: "person")
-            }
+//          ProfileView(user: <#User#>)
+//            .tabItem {
+//              Image(systemName: "person")
+//            }
         }
         
         .navigationTitle("Home")

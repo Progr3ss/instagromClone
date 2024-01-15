@@ -11,6 +11,7 @@ struct UserCell: View {
     let user: User
     
     var body: some View {
+      
         HStack(spacing: 10) {
             AsyncImage(url: URL(string: user.profileImageUrl)) { phase in
                 switch phase {
